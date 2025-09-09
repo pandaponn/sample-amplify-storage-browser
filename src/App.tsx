@@ -20,7 +20,10 @@ function App() {
       {({ signOut, user }) => (
         <>
           <div className="header">
-            <h1>{`Hello ${user?.username}`}</h1>
+            <div className="header-left">
+              <img src="/logo.svg" alt="Logo" className="logo" />
+              <h1>{`Hello ${user?.username}`}</h1>
+            </div>
             <Button onClick={signOut}>Sign out</Button>
           </div>
           <StorageBrowser />
