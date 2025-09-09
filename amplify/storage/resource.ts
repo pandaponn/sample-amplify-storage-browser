@@ -12,12 +12,12 @@ export const storage = defineStorage({
         allow.groups(['admin']).to(['read', 'write', 'delete']),
         allow.authenticated.to(['read'])
     ],
-    'private/{entity_id}/*': [
-        allow.entity('identity').to(['read', 'write', 'delete'])
-    ],
     'external/*': [
         allow.groups(['external']).to(['read', 'write', 'delete']),
         allow.authenticated.to(['read'])
+    ],
+    'private/{entity_id}/*': [
+        allow.entity('identity').to(['read', 'write', 'delete'])
     ]
    })
 });
