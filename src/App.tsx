@@ -22,7 +22,7 @@ function App() {
           <div className="header">
             <div className="header-left">
               <img src="https://www.mandainature.org/content/dam/mandai-nature/resources/en/img/mandai-nature-full.svg" alt="Logo" className="logo" />
-              <h1>{`Hello ${user?.username}`}</h1>
+              <h1>{`Hello Zhi Hao`}</h1>
             </div>
             <Button onClick={signOut}>Sign out</Button>
           </div>
