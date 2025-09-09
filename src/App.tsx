@@ -17,7 +17,7 @@ const { StorageBrowser } = createStorageBrowser({
 function App() {
   return (
     <Authenticator>
-      {({ signOut, user }) => (
+      {({ signOut }) => (
         <>
           <div className="header">
             <div className="header-left">
